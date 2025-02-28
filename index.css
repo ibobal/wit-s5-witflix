@@ -16,9 +16,14 @@ body {
   margin: 1rem 1rem 2rem;
 }
 
+.logo {
+  flex: 1;
+}
+
 .logo a {
   color: red;
   text-decoration: none;
+  flex: 1;
 }
 
 .navbar {
@@ -26,6 +31,7 @@ body {
   gap: 1rem;
   justify-content: center;
   margin: 0 1rem;
+  flex: 1;
 }
 
 .navbar a {
@@ -44,6 +50,7 @@ body {
   align-items: center;
   font-size: 1.5rem;
   justify-content: end;
+  flex: 1;
 }
 
 .utilities input {
@@ -127,6 +134,7 @@ body {
 
 .movie-descr {
   width: 50%;
+  min-width: 350px;
   margin-top: -0.5rem;
 }
 
@@ -178,4 +186,47 @@ body {
 
 .movie-card h2 {
   margin-bottom: 0.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.footer-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.footer-navbar {
+  display: flex;
+  gap: 1rem;
+  color: black;
+}
+
+.footer-navbar a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0rem;
+}
+
+.social-icons {
+  margin: 0.5rem 0rem;
+  font-size: 1.5rem;
+}
+
+.store-icons {
+  margin: 0.5rem 0rem;
+  font-size: 1.5rem;
 }
