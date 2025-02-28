@@ -30,7 +30,9 @@
 
 .navbar a {
   text-decoration: none;
+  text-wrap: nowrap;
   color: black;
+  flex: 1;
 }
 
 .navbar a:hover {
@@ -45,7 +47,7 @@
   justify-content: end;
 }
 
-input {
+.utilities input {
   background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -56,4 +58,71 @@ input {
   border-radius: 5px;
   border: none;
   width: 10rem;
+}
+
+/* Main Section */
+
+/* Hero Container */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  min-width: 900px;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.movie-specs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: -0.5rem;
+  align-items: center;
+}
+
+.user-rating {
+  font-weight: bold;
+}
+
+.user-rating i {
+  color: red;
+}
+
+.age-rating {
+  border: 1px solid black;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.3em;
+  border-radius: 5px;
+}
+
+.movie-length {
+  font-weight: bold;
+}
+
+.movie-descr {
+  width: 50%;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.movie-info span {
+  font-weight: bold;
+  color: red;
+}
+
+.cta-btn {
+  background-color: red;
+  color: white;
+  padding: 0.7rem 0.5rem 0.7rem 0.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 7rem;
 }
